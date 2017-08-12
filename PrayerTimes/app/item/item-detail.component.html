@@ -1,0 +1,15 @@
+<ActionBar [title]="item.name" class="action-bar"></ActionBar>
+<StackLayout class="m-15">
+    <Label class="h2 namazName" text="Fajr"></Label>
+    <Label class="h2" [text]="item.fajr | momentPipe"></Label>
+    <Label class="h2 namazName" text="Zuhr"></Label>
+    <Label class="h2" [text]="item.zuhr | momentPipe"></Label>
+    <Label class="h2 namazName" text="Asr"></Label>
+    <Label class="h2" [text]="item.asr | momentPipe"></Label>
+    <Label class="h2 namazName" text="Maghrib"></Label>
+    <Label class="h2" text="Sunset"></Label>
+    <Label class="h2 namazName" text="Isha"></Label>
+    <Label class="h2" [text]="item.isha | momentPipe"></Label>
+    <Label class="h2 namazName" text="Jummah"></Label>
+    <Label class="h2" [text]="item.jummah1 | momentPipe"></Label>
+</StackLayout>
